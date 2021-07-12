@@ -1,12 +1,17 @@
 import "./App.css";
-import { Typography } from "@material-ui/core";
-
+import Header from "./components/Header";
+import TableCategorie from "./components/TableCategorie";
+import { Container, Typography } from "@material-ui/core";
 function App() {
   return (
     <div className="App">
-      <Typography variant="h1" component="h2">
-        Hello App
-      </Typography>
+      <Header />
+      <Container fixed>
+        <Typography variant="h1">
+          Chuck Norris Jokes
+        </Typography>
+        <TableCategorie />
+      </Container>
     </div>
   );
 }
